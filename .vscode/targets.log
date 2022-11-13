@@ -1,0 +1,1878 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Nov 13 17:17:11 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# makefile (from 'Makefile', line 75)
+AS = $(TOOLPREFIX)gas
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 217)
+QEMUGDB = $(shell if $(QEMU) -help | grep -q '^-gdb'; then echo "-gdb tcp::$(GDBPORT)"; else echo "-s -p $(GDBPORT)"; fi)
+# makefile (from 'Makefile', line 146)
+ULIB = ulib.o usys.o printf.o umalloc.o
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 215)
+GDBPORT = $(shell expr `id -u` % 5000 + 25000)
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/shijiu
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/113/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/shijiu/oslab/xv6
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/shijiu/.config/Code/CachedData/6261075646f055b99068d3688932416f2346dd3b
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.V4SVV1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/shijiu/oslab/xv6
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 134)
+MEMFSOBJS = $(filter-out ide.o,$(OBJS)) memide.o
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'zombie.d', line 1)
+MAKEFILE_LIST := Makefile bio.d bootasm.d bootmain.d cat.d console.d echo.d entryother.d exec.d file.d forktest.d fs.d grep.d ide.d init.d initcode.d ioapic.d kalloc.d kbd.d kill.d lapic.d ln.d log.d ls.d main.d mkdir.d mp.d null.d picirq.d pipe.d printf.d proc.d rm.d sh.d sleeplock.d spinlock.d stressfs.d string.d syscall.d sysfile.d sysproc.d trap.d uart.d ulib.d umalloc.d usertests.d vm.d wc.d wolfietest.d zombie.d
+# makefile (from 'Makefile', line 81)
+ASFLAGS = -m32 -gdwarf-2 -Wa,-divide
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 8497
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SESSION_MANAGER = local/shijiu-virtual-machine:@/tmp/.ICE-unix/2485,unix/shijiu-virtual-machine:/tmp/.ICE-unix/2485
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 1)
+OBJS = bio.o console.o exec.o file.o fs.o ide.o ioapic.o kalloc.o kbd.o lapic.o log.o main.o mp.o picirq.o pipe.o proc.o sleeplock.o spinlock.o string.o swtch.o syscall.o sysfile.o sysproc.o trapasm.o trap.o uart.o vectors.o vm.o 
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from 'Makefile', line 200)
+PRINT = runoff.list runoff.spec README toc.hdr toc.ftr wolfie_ascii.txt $(FILES)
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# makefile (from 'Makefile', line 78)
+OBJDUMP = $(TOOLPREFIX)objdump
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'Makefile', line 168)
+UPROGS = _cat _echo _forktest _grep _init _kill _ln _ls _mkdir _rm _sh _stressfs _usertests _wc _zombie _wolfietest 
+# environment
+SNAP_COOKIE = 3YfFcgE_7u1Ankfb_aep-Bwi9lqCISLs2sUl_on_A_4o6WaYo0Ds
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = zh_CN:en
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/shijiu/snap/code/common
+# environment
+LC_TIME = zh_CN.UTF-8
+# environment
+SNAP = /snap/code/113
+# environment
+INVOCATION_ID = 2b2cce703682496aad6ad6a540838945
+# environment
+SNAP_REVISION = 113
+# environment
+SNAP_REAL_HOME = /home/shijiu
+# environment
+USERNAME = shijiu
+# makefile (from 'Makefile', line 199)
+FILES = $(shell grep -v '^\#' runoff.list)
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+ 
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = shijiu
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := xv6.img
+# environment
+SYSTEMD_EXEC_PID = 2530
+# makefile (from 'Makefile', line 58)
+QEMU = $(shell if which qemu > /dev/null; then echo qemu; exit; elif which qemu-system-i386 > /dev/null; then echo qemu-system-i386; exit; elif which qemu-system-x86_64 > /dev/null; then echo qemu-system-x86_64; exit; else qemu=/Applications/Q.app/Contents/MacOS/i386-softmmu.app/Contents/MacOS/i386-softmmu; if test -x $$qemu; then echo $$qemu; exit; fi; fi; echo "***" 1>&2; echo "*** Error: Couldn't find a working QEMU executable." 1>&2; echo "*** Is the directory containing the qemu binary in your PATH" 1>&2; echo "*** or have you tried setting the QEMU variable in Makefile?" 1>&2; echo "***" 1>&2; exit 1)
+# environment
+DISPLAY = :0
+# environment
+USER = shijiu
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+SNAP_DATA = /var/snap/code/113
+# environment
+SNAP_CONTEXT = 3YfFcgE_7u1Ankfb_aep-Bwi9lqCISLs2sUl_on_A_4o6WaYo0Ds
+# makefile (from 'Makefile', line 251)
+EXTRA = mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c zombie.c printf.c umalloc.c README wolfie_ascii.txt dot-bochsrc *.pl toc.* runoff runoff1 runoff.list .gdbinit.tmpl gdbutil 
+# makefile (from 'Makefile', line 83)
+LDFLAGS = -m $(shell $(LD) -V | grep elf_i386 2>/dev/null | head -n 1)
+# environment
+MANAGERPID = 2320
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 8456
+# environment
+_ = /snap/code/113/usr/share/code/code
+# environment
+LC_PAPER = zh_CN.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 87)
+CFLAGS = -fno-pic -static -fno-builtin -fno-strict-aliasing -O2 -Wall -MD -ggdb -m32 -Werror -fno-omit-frame-pointer $(shell $(CC) -fno-stack-protector -E -x c /dev/null >/dev/null 2>&1 && echo -fno-stack-protector) -fno-pie -no-pie
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/shijiu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:58465
+# makefile (from 'Makefile', line 221)
+CPUS := 2
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/shijiu
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 39)
+TOOLPREFIX := 
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-0d445689-1.73.1-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/113/usr/share/glib-2.0/schemas
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+PAPERSIZE = a4
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 62610756
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 76)
+LD = $(TOOLPREFIX)ld
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 223)
+QEMUOPTS = -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp $(CPUS) -m 512 $(QEMUEXTRA)
+# makefile (from 'Makefile', line 74)
+CC = $(TOOLPREFIX)gcc
+# makefile (from 'Makefile', line 77)
+OBJCOPY = $(TOOLPREFIX)objcopy
+# environment
+SNAP_USER_DATA = /home/shijiu/snap/code/113
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ 
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+ 
+# Load=149/1024=15%, Rehash=0, Collisions=5/313=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2051, inode 1761602): 274 files, no impossibilities.
+
+# 274 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+_%: %.o ulib.o usys.o printf.o umalloc.o
+#  recipe to execute (from 'Makefile', line 149):
+	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o $@ $^
+	$(OBJDUMP) -S $@ > $*.asm
+	$(OBJDUMP) -t $@ | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $*.sym
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+picirq.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:02.332228876
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pipe.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.959708322
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+grep.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.044031504
+ 
+#  File has been updated.
+#  Successfully updated.
+
+sysfile.o: sysfile.c /usr/include/stdc-predef.h types.h defs.h param.h stat.h mmu.h proc.h fs.h spinlock.h sleeplock.h file.h fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dist:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 259):
+	rm -rf dist
+	mkdir dist
+	for i in $(FILES); \
+	do \
+		grep -v PAGEBREAK $$i >dist/$$i; \
+	done
+	sed '/CUT HERE/,$$d' Makefile >dist/Makefile
+	echo >dist/runoff.spec
+	cp $(EXTRA) dist
+
+# Not a target:
+elf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+defs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+toc.hdr:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mp.o: mp.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mp.h x86.h mmu.h proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ls.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-11-13 15:58:31.30003398
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+uart.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.896281968
+#  File has been updated.
+#  Successfully updated.
+
+lapic.o: lapic.c /usr/include/stdc-predef.h param.h types.h defs.h date.h memlayout.h traps.h mmu.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+spinlock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+entry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lapic.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+buf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu-memfs: xv6memfs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 229):
+	$(QEMU) -drive file=xv6memfs.img,index=0,media=disk,format=raw -smp $(CPUS) -m 256
+ 
+
+# Not a target:
+init.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.108032123
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+_rm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pipe.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+asm.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+x86.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kbd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+umalloc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.832029454
+#  File has been updated.
+ 
+#  Successfully updated.
+
+# Not a target:
+kalloc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.595704592
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+proc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mp.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_ls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+spinlock.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.596277845
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sysfile.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.756280044
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+usys.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+string.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+ulib.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.712028294
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+zombie.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:32.116041873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bootmain.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bootasm.o: bootasm.S asm.h memlayout.h mmu.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+echo.o: echo.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+entryother: entryother.S
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 112):
+	$(CC) $(CFLAGS) -fno-pic -nostdinc -I. -c entryother.S
+	$(LD) $(LDFLAGS) -N -e start -Ttext 0x7000 -o bootblockother.o entryother.o
+	$(OBJCOPY) -S -O binary -j .text bootblockother.o entryother
+	$(OBJDUMP) -S bootblockother.o > entryother.asm
+
+# Not a target:
+swtch.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+printf.o: printf.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ioapic.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.527703895
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+mp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stat.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tar:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 282):
+	rm -rf /tmp/xv6
+	mkdir -p /tmp/xv6
+	cp dist/* dist/.gdbinit.tmpl /tmp/xv6
+	(cd /tmp; tar cf - xv6) | gzip >xv6-rev10.tar.gz  # the next one will be 10 (9/17)
+
+.PRECIOUS: %.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+memlayout.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_init:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+initcode.o: initcode.S syscall.h traps.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stressfs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+log.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.799706682
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+syscall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 17:14:49.026478051
+#  File has been updated.
+#  Successfully updated.
+
+sleeplock.o: sleeplock.c /usr/include/stdc-predef.h types.h defs.h param.h x86.h memlayout.h mmu.h proc.h spinlock.h sleeplock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bootmain.o: bootmain.c types.h elf.h x86.h memlayout.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sh.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.552036418
+#  File has been updated.
+#  Successfully updated.
+
+bochs: fs.img xv6.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 211):
+	if [ ! -e .bochsrc ]; then ln -s dot-bochsrc .bochsrc; fi
+	bochs -q
+
+# Not a target:
+_zombie:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+null.o: /dev/null /usr/include/stdc-predef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+null.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-11-13 11:38:30.709782139
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+mkdir.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.360034561
+#  File has been updated.
+#  Successfully updated.
+
+fs.img: mkfs README wolfie_ascii.txt _cat _echo _forktest _grep _init _kill _ln _ls _mkdir _rm _sh _stressfs _usertests _wc _zombie _wolfietest
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 187):
+	./mkfs fs.img README wolfie_ascii.txt $(UPROGS)
+
+print: xv6.pdf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lapic.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.731705986
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+runoff.spec:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_wolfietest:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.899707707
+#  File has been updated.
+#  Successfully updated.
+
+cat.o: cat.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu-nox-gdb: fs.img xv6.img .gdbinit
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 242):
+	@echo "*** Now run 'gdb'." 1>&2
+	$(QEMU) -nographic $(QEMUOPTS) -S $(QEMUGDB)
+
+wc.o: wc.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_echo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+file.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-11-13 16:04:38.211700657
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 192):
+	rm -f *.tex *.dvi *.idx *.aux *.log *.ind *.ilg \
+	*.o *.d *.asm *.sym vectors.S bootblock entryother \
+	initcode initcode.out kernel xv6.img fs.img kernelmemfs \
+	xv6memfs.img mkfs .gdbinit \
+	$(UPROGS)
+
+proc.o: proc.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h x86.h proc.h spinlock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ls.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+picirq.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+grep.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_stressfs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+bio.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:37.983698321
+#  File has been updated.
+#  Successfully updated.
+
+fs.o: fs.c /usr/include/stdc-predef.h types.h defs.h param.h stat.h mmu.h proc.h spinlock.h sleeplock.h fs.h buf.h file.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+exec.o: exec.c /usr/include/stdc-predef.h types.h param.h memlayout.h mmu.h proc.h defs.h x86.h elf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+fs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bootasm.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+initcode.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:03.180258694
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ 
+syscall.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.64827856
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sysproc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+wc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kbd.o: kbd.c /usr/include/stdc-predef.h types.h x86.h defs.h kbd.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mkdir.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sleeplock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+spinlock.o: spinlock.c /usr/include/stdc-predef.h types.h defs.h param.h x86.h memlayout.h mmu.h proc.h spinlock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bootblock: bootasm.S bootmain.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 104):
+	$(CC) $(CFLAGS) -fno-pic -O -nostdinc -I. -c bootmain.c
+	$(CC) $(CFLAGS) -fno-pic -nostdinc -I. -c bootasm.S
+	$(LD) $(LDFLAGS) -N -e start -Ttext 0x7C00 -o bootblock.o bootasm.o bootmain.o
+	$(OBJDUMP) -S bootblock.o > bootblock.asm
+	$(OBJCOPY) -S -O binary -j .text bootblock.o bootblock
+	./sign.pl bootblock
+
+# Not a target:
+kbd.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.663705289
+#  File has been updated.
+#  Successfully updated.
+
+console.o: console.c /usr/include/stdc-predef.h types.h defs.h param.h traps.h spinlock.h sleeplock.h fs.h file.h memlayout.h mmu.h proc.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+uart.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_wc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pipe.o: pipe.c /usr/include/stdc-predef.h types.h defs.h param.h mmu.h proc.h fs.h spinlock.h sleeplock.h file.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_kill:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+mkdir.o: mkdir.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+init.o: init.c /usr/include/stdc-predef.h types.h stat.h user.h fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vectors.pl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+file.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+file.o: file.c /usr/include/stdc-predef.h types.h defs.h param.h fs.h spinlock.h sleeplock.h file.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uart.o: uart.c /usr/include/stdc-predef.h types.h defs.h param.h traps.h spinlock.h sleeplock.h fs.h file.h mmu.h proc.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+wolfie_ascii.txt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernelmemfs: bio.o console.o exec.o file.o fs.o ioapic.o kalloc.o kbd.o lapic.o log.o main.o mp.o picirq.o pipe.o proc.o sleeplock.o spinlock.o string.o swtch.o syscall.o sysfile.o sysproc.o trapasm.o trap.o uart.o vectors.o vm.o memide.o entry.o entryother initcode kernel.ld fs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 136):
+ 
+	$(LD) $(LDFLAGS) -T kernel.ld -o kernelmemfs entry.o  $(MEMFSOBJS) -b binary initcode entryother fs.img
+	$(OBJDUMP) -S kernelmemfs > kernelmemfs.asm
+	$(OBJDUMP) -t kernelmemfs | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > kernelmemfs.sym
+
+picirq.o: picirq.c /usr/include/stdc-predef.h types.h x86.h traps.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ide.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+console.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel: bio.o console.o exec.o file.o fs.o ide.o ioapic.o kalloc.o kbd.o lapic.o log.o main.o mp.o picirq.o pipe.o proc.o sleeplock.o spinlock.o string.o swtch.o syscall.o sysfile.o sysproc.o trapasm.o trap.o uart.o vectors.o vm.o entry.o entryother initcode kernel.ld
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 124):
+	$(LD) $(LDFLAGS) -T kernel.ld -o kernel entry.o $(OBJS) -b binary initcode entryother
+	$(OBJDUMP) -S kernel > kernel.asm
+	$(OBJDUMP) -t kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > kernel.sym
+
+# Not a target:
+bootmain.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:01.092185249
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+exec.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rm.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.420035141
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sysproc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.804280704
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+usertests.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.964040402
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+_cat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+usertests.o: usertests.c /usr/include/stdc-predef.h param.h types.h stat.h user.h fs.h fcntl.h syscall.h traps.h memlayout.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kbd.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kill.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-11-13 15:58:31.164032665
+#  File has been updated.
+#  Successfully updated.
+
+stressfs.o: stressfs.c /usr/include/stdc-predef.h types.h stat.h user.h fs.h fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+trap.o: trap.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h proc.h x86.h traps.h spinlock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+entryother.o: entryother.S asm.h memlayout.h mmu.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel.ld:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sysproc.o: sysproc.c /usr/include/stdc-predef.h types.h x86.h defs.h date.h param.h memlayout.h mmu.h proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ioapic.o: ioapic.c /usr/include/stdc-predef.h types.h defs.h traps.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+proc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.496276471
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+traps.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_mkdir:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+file.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+string.o: string.c /usr/include/stdc-predef.h types.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+param.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/include/stdc-predef.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+toc.ftr:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+memide.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vm.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:35.012283561
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+wc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:32.052041254
+#  File has been updated.
+#  Successfully updated.
+
+kill.o: kill.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+wolfietest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+runoff.list:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kalloc.o: kalloc.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h spinlock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+wolfietest.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:37.887697337
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+init.c:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ln.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.220033206
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stressfs.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:31.624037114
+#  File has been updated.
+#  Successfully updated.
+
+ide.o: ide.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h proc.h x86.h traps.h spinlock.h sleeplock.h fs.h buf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sh.o: sh.c /usr/include/stdc-predef.h types.h user.h fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.gdbinit.tmpl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main.o: main.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h proc.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+entry.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+types.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+console.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.095699468
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bootasm.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:01.168187924
+#  File has been updated.
+#  Successfully updated.
+
+vm.o: vm.c /usr/include/stdc-predef.h param.h types.h defs.h x86.h memlayout.h mmu.h proc.h elf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bio.o: bio.c /usr/include/stdc-predef.h types.h defs.h param.h spinlock.h sleeplock.h fs.h buf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+fs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+exec.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-11-13 16:04:38.155700083
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sleeplock.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.536277021
+#  File has been updated.
+#  Successfully updated.
+
+syscall.o: syscall.c /usr/include/stdc-predef.h types.h defs.h param.h memlayout.h mmu.h proc.h x86.h syscall.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ulib.o: ulib.c /usr/include/stdc-predef.h types.h stat.h fcntl.h user.h x86.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ulib.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+wolfietest.o: wolfietest.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+forktest.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.956030653
+#  File has been updated.
+#  Successfully updated.
+ 
+
+# Not a target:
+kill.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu: fs.img xv6.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 226):
+	$(QEMU) -serial mon:stdio $(QEMUOPTS)
+
+vectors.S: vectors.pl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 144):
+	./vectors.pl > vectors.S
+
+# Not a target:
+zombie.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+%.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+initcode: initcode.S
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 118):
+	$(CC) $(CFLAGS) -nostdinc -I. -c initcode.S
+	$(LD) $(LDFLAGS) -N -e start -Ttext 0 -o initcode.out initcode.o
+	$(OBJCOPY) -S -O binary initcode.out initcode
+	$(OBJDUMP) -S initcode.o > initcode.asm
+
+# Not a target:
+ 
+fcntl.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ide.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.427702871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+initcode.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+log.o: log.c /usr/include/stdc-predef.h types.h defs.h param.h spinlock.h sleeplock.h fs.h buf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+umalloc.o: umalloc.c /usr/include/stdc-predef.h types.h stat.h user.h param.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.839707092
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+spinlock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+trapasm.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+ioapic.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+trapasm.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cat.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.656027752
+#  File has been updated.
+#  Successfully updated.
+
+qemu-gdb: fs.img xv6.img .gdbinit
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 238):
+	@echo "*** Now run 'gdb'." 1>&2
+	$(QEMU) -serial mon:stdio $(QEMUOPTS) -S $(QEMUGDB)
+
+qemu-nox: fs.img xv6.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 232):
+	$(QEMU) -nographic $(QEMUOPTS)
+
+# Not a target:
+_grep:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+rm.o: rm.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sleeplock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+printf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+entryother.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dist-test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 270):
+	rm -rf dist
+	make dist
+	rm -rf dist-test
+	mkdir dist-test
+	cp dist/* dist-test
+	cd dist-test; $(MAKE) print
+	cd dist-test; $(MAKE) bochs || true
+	cd dist-test; $(MAKE) qemu
+
+# Not a target:
+_usertests:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+swtch.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sysfile.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+proc.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+_forktest: forktest.o ulib.o usys.o printf.o umalloc.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 154):
+	# forktest has less library code linked in - needs to be small
+	# in order to be able to max out the proc table.
+	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o _forktest forktest.o ulib.o usys.o
+	$(OBJDUMP) -S _forktest > forktest.asm
+
+# Not a target:
+forktest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+xv6memfs.img: bootblock kernelmemfs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 99):
+	dd if=/dev/zero of=xv6memfs.img count=10000
+	dd if=bootblock of=xv6memfs.img conv=notrunc
+	dd if=kernelmemfs of=xv6memfs.img seek=1 conv=notrunc
+
+forktest.o: forktest.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/dev/null:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+trap.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:25:34.852281363
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+printf.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.78402899
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: dist-test dist
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+README:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+trap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+mkfs: mkfs.c fs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 160):
+	gcc -Werror -Wall -o mkfs mkfs.c
+
+# Not a target:
+entryother.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:03.14825757
+#  File has been updated.
+#  Successfully updated.
+
+xv6.pdf: runoff.list runoff.spec README toc.hdr toc.ftr wolfie_ascii.txt types.h param.h memlayout.h defs.h x86.h asm.h mmu.h elf.h date.h entry.S entryother.S main.c spinlock.h spinlock.c vm.c proc.h proc.c swtch.S kalloc.c traps.h vectors.pl trapasm.S trap.c syscall.h syscall.c sysproc.c buf.h sleeplock.h fcntl.h stat.h fs.h file.h ide.c bio.c sleeplock.c log.c fs.c file.c sysfile.c exec.c pipe.c string.c mp.h mp.c lapic.c ioapic.c kbd.h kbd.c console.c uart.c initcode.S usys.S init.c sh.c bootasm.S bootmain.c kernel.ld
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 203):
+	./runoff
+	ls -l xv6.pdf
+
+# Not a target:
+usys.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+fs.d:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 16:04:38.367702256
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+syscall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ls.o: ls.c /usr/include/stdc-predef.h types.h stat.h user.h fs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+echo.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-13 15:58:30.892030034
+#  File has been updated.
+#  Successfully updated.
+
+xv6.img: bootblock kernel
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 94):
+	dd if=/dev/zero of=xv6.img count=10000
+	dd if=bootblock of=xv6.img conv=notrunc
+	dd if=kernel of=xv6.img seek=1 conv=notrunc
+
+tags: bio.o console.o exec.o file.o fs.o ide.o ioapic.o kalloc.o kbd.o lapic.o log.o main.o mp.o picirq.o pipe.o proc.o sleeplock.o spinlock.o string.o swtch.o syscall.o sysfile.o sysproc.o trapasm.o trap.o uart.o vectors.o vm.o entryother.S _init
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 141):
+	etags *.S *.c
+
+# Not a target:
+mkfs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mmu.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+echo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+usertests.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+grep.o: grep.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+log.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ln.o: ln.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+umalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+date.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.gdbinit: .gdbinit.tmpl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 235):
+	sed "s/localhost:1234/localhost:$(GDBPORT)/" < $^ > $@
+
+# Not a target:
+sh.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+string.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-03 15:56:02.65624027
+#  File has been updated.
+#  Successfully updated.
+
+zombie.o: zombie.c /usr/include/stdc-predef.h types.h stat.h user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ln.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vectors.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=237/1024=23%, Rehash=0, Collisions=112/910=12%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 302 / storage = 2544 B / avg = 8 B
+ 
+# current buf: size = 8162 B / used = 2544 B / count = 302 / avg = 8 B
+
+# strcache performance: lookups = 1120 / hit rate = 73%
+# hash-table stats:
+# Load=302/8192=4%, Rehash=0, Collisions=23/1120=2%
+# Finished Make data base on Sun Nov 13 17:17:11 2022
+
+ 

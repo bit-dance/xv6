@@ -120,6 +120,7 @@ void            userinit(void);
 int             wait(void);
 void            wakeup(void*);
 void            yield(void);
+int             wolfie(char* buf, uint size);
 
 // swtch.S
 void            swtch(struct context**, struct context*);

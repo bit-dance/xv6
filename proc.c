@@ -330,6 +330,7 @@ scheduler(void)
     // Enable interrupts on this processor.
     sti();
 
+    int found=0;
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
     for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
@@ -345,12 +346,19 @@ scheduler(void)
 
       swtch(&(c->scheduler), p->context);
       switchkvm();
+      found=1;
 
       // Process is done running for now.
       // It should have changed its p->state before coming back.
       c->proc = 0;
     }
     release(&ptable.lock);
+    if (found==0)
+    {
+      // intr_on();
+      // asm volatile("wfi");
+    }
+    
 
   }
 }

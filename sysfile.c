@@ -442,3 +442,57 @@ sys_pipe(void)
   fd[1] = fd1;
   return 0;
 }
+
+int 
+sys_wolfie(void)
+{
+  char* buf,*path = "wolfie_ascii.txt";
+  int size,fd;
+  // get the size , buf first from stack
+  if( argint(1, &size) < 0||argptr(0, &buf, size) < 0){
+    return -1;
+  }
+  
+  struct file *f;
+  struct inode *ip;
+
+  // check if buffer is big enough
+  if(size < 7461)
+    return -1;
+
+  //lock the file system
+  begin_op();
+
+  // judge file exist
+  if((ip = namei(path)) == 0){
+    end_op();
+    return -1;
+  }
+  // get file descriptor and structure
+  ilock(ip);
+  if((f = filealloc()) == 0 || (fd = fdalloc(f)) < 0){
+    if(f)
+      fileclose(f);
+    iunlockput(ip);
+    end_op();
+    return -1;
+  }
+  iunlock(ip);
+  end_op();
+ // set file properties
+  f->type = FD_INODE;
+  f->ip = ip;
+  f->off = 0;
+  f->readable = 1;
+  f->writable = 0;
+  
+  // read file into buffer
+  int bytesRead = fileread(f, buf, size);
+
+  // close file
+  myproc()->ofile[fd] = 0;
+  fileclose(f);
+
+  return bytesRead;
+  //return wolfie(buf, size);
+}
