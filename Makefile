@@ -82,6 +82,14 @@ ASFLAGS = -m32 -gdwarf-2 -Wa,-divide
 # FreeBSD ld wants ``elf_i386_fbsd''
 LDFLAGS += -m $(shell $(LD) -V | grep elf_i386 2>/dev/null | head -n 1)
 
+# Comment/uncomment the following line to disable/enable debugging
+DEBUG = y
+ifeq ($(DEBUG),y)
+  # "-O" is needed to expand inlines
+  EXTRA_CFLAGS += -O -g -DDEBUG
+else
+  EXTRA_CFLAGS += -O2
+endif 
 # Disable PIE when possible (for Ubuntu 16.10 toolchain)
 ifneq ($(shell $(CC) -dumpspecs 2>/dev/null | grep -e '[^f]no-pie'),)
 CFLAGS += -fno-pie -no-pie
@@ -182,6 +190,9 @@ UPROGS=\
 	_wc\
 	_zombie\
 	_wolfietest\
+	_ps\
+	_dpro\
+    _nice\
 
 fs.img: mkfs README wolfie_ascii.txt $(UPROGS)
 	./mkfs fs.img README wolfie_ascii.txt $(UPROGS)
@@ -251,7 +262,7 @@ qemu-nox-gdb: fs.img xv6.img .gdbinit
 EXTRA=\
 	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
 	ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c zombie.c\
-	printf.c umalloc.c\
+	printf.c umalloc.c nice.c dpro.c ps.c\
 	README wolfie_ascii.txt dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
 	.gdbinit.tmpl gdbutil\
 
