@@ -90,6 +90,22 @@ sys_uptime(void)
   return xticks;
 }
 
+int 
+sys_waitx(void)
+{
+  int *wtime;
+  int *rtime;
+  if(argptr(1,(char**)&wtime,sizeof(int)) < 0)
+  {
+      return -1;
+  }
+  if(argptr(1,(char**)&rtime,sizeof(int))<0)
+  {
+    return -1;
+  }
+
+  return waitx(wtime,rtime);
+}
 int
 sys_cps(void)
 {

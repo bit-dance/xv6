@@ -26,6 +26,7 @@ int uptime(void);
 int wolfie(void *buf, uint size);
 int cps(void);
 int chpr(int pid, int priority);
+int waitx(int* wtime, int* rtime);
 
 // ulib.c
 int stat(const char*, struct stat*);

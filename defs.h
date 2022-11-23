@@ -123,6 +123,8 @@ void            yield(void);
 int             wolfie(char* buf, uint size);
 int		        cps(void);
 int 		    chpr(int pid, int priority);
+int             waitx(int* , int* );
+void            update_running_time(void);
 
 // swtch.S
 void            swtch(struct context**, struct context*);
@@ -188,6 +190,7 @@ void            switchuvm(struct proc*);
 void            switchkvm(void);
 int             copyout(pde_t*, uint, void*, uint);
 void            clearpteu(pde_t *pgdir, char *uva);
+
 
 // number of elements in fixed-size array
 #define NELEM(x) (sizeof(x)/sizeof((x)[0]))

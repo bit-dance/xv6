@@ -23,3 +23,5 @@
 #define SYS_wolfie 22
 #define SYS_cps 23
 #define SYS_chpr 24
+#define SYS_waitx 25
+
