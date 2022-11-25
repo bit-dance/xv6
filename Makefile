@@ -182,6 +182,7 @@ UPROGS=\
 	_wc\
 	_zombie\
 	_wolfietest\
+	_getStackInfo\
 
 fs.img: mkfs README wolfie_ascii.txt $(UPROGS)
 	./mkfs fs.img README wolfie_ascii.txt $(UPROGS)

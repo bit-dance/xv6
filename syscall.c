@@ -13,16 +13,11 @@
 // library system call function. The saved user %esp points
 // to a saved program counter, and then the first argument.
 
-// Fetch the int at addr from the current process.
-int
-fetchint(uint addr, int *ip)
+// Fetch the int at addr from the current process.int
+int fetchint(uint addr, int *ip)
 {
-  struct proc *curproc = myproc();
-
-  if(addr >= curproc->sz || addr+4 > curproc->sz)
-    return -1;
-  *ip = *(int*)(addr);
-  return 0;
+    *ip = *(int *) (addr);
+    return 0;
 }
 
 // Fetch the nul-terminated string at addr from the current process.
@@ -31,25 +26,24 @@ fetchint(uint addr, int *ip)
 int
 fetchstr(uint addr, char **pp)
 {
-  char *s, *ep;
-  struct proc *curproc = myproc();
+    char *s, *ep;
+    struct proc *curproc = myproc();
 
-  if(addr >= curproc->sz)
+    *pp = (char *) addr;
+    ep = (char *) curproc->sz;
+    for (s = *pp; s < ep; s++)
+    {
+        if (*s == 0)
+            return s - *pp;
+    }
     return -1;
-  *pp = (char*)addr;
-  ep = (char*)curproc->sz;
-  for(s = *pp; s < ep; s++){
-    if(*s == 0)
-      return s - *pp;
-  }
-  return -1;
 }
 
 // Fetch the nth 32-bit system call argument.
 int
 argint(int n, int *ip)
 {
-  return fetchint((myproc()->tf->esp) + 4 + 4*n, ip);
+    return fetchint((myproc()->tf->esp) + 4 + 4 * n, ip);
 }
 
 // Fetch the nth word-sized system call argument as a pointer
@@ -58,15 +52,12 @@ argint(int n, int *ip)
 int
 argptr(int n, char **pp, int size)
 {
-  int i;
-  struct proc *curproc = myproc();
- 
-  if(argint(n, &i) < 0)
-    return -1;
-  if(size < 0 || (uint)i >= curproc->sz || (uint)i+size > curproc->sz)
-    return -1;
-  *pp = (char*)i;
-  return 0;
+    int i;
+
+    if (argint(n, &i) < 0)
+        return -1;
+    *pp = (char *) i;
+    return 0;
 }
 
 // Fetch the nth word-sized system call argument as a string pointer.
@@ -76,12 +67,11 @@ argptr(int n, char **pp, int size)
 int
 argstr(int n, char **pp)
 {
-  int addr;
-  if(argint(n, &addr) < 0)
-    return -1;
-  return fetchstr(addr, pp);
+    int addr;
+    if (argint(n, &addr) < 0)
+        return -1;
+    return fetchstr(addr, pp);
 }
-
 extern int sys_chdir(void);
 extern int sys_close(void);
 extern int sys_dup(void);

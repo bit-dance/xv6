@@ -79,6 +79,26 @@ trap(struct trapframe *tf)
     break;
 
   //PAGEBREAK: 13
+  case T_PGFLT:
+            if (rcr2() < 0x7FFFF000)
+            {
+                cprintf("page error %x ",rcr2());
+                cprintf("stack pos : %x\n", myproc()->stack_pos);
+                if ((myproc()->stack_pos = allocuvm(myproc()->pgdir, myproc()->stack_pos - 1 * PGSIZE,
+                                                    myproc()->stack_pos)) == 0)
+                {
+                    myproc()->killed = 1;
+                }
+                myproc()->stack_pos-=PGSIZE;
+                cprintf("create a new page %x\n", myproc()->stack_pos);
+                //clearpteu(myproc()->pgdir, (char *) (myproc()->stack_pos - PGSIZE));
+                return;
+            }
+            else
+            {
+                myproc()->killed = 1;
+                break;
+            }
   default:
     if(myproc() == 0 || (tf->cs&3) == 0){
       // In kernel, it must be our mistake.

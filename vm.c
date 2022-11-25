@@ -311,40 +311,57 @@ clearpteu(pde_t *pgdir, char *uva)
 }
 
 // Given a parent process's page table, create a copy
-// of it for a child.
-pde_t*
-copyuvm(pde_t *pgdir, uint sz)
+// of it for a child.pde_t *
+pde_t *
+copyuvm(pde_t *pgdir, uint sz, uint stack_pos)
 {
-  pde_t *d;
-  pte_t *pte;
-  uint pa, i, flags;
-  char *mem;
+    pde_t *d;
+    pte_t *pte;
+    uint pa, i, flags;
+    char *mem;
 
-  if((d = setupkvm()) == 0)
-    return 0;
-  for(i = 0; i < sz; i += PGSIZE){
-    if((pte = walkpgdir(pgdir, (void *) i, 0)) == 0)
-      panic("copyuvm: pte should exist");
-    if(!(*pte & PTE_P))
-      panic("copyuvm: page not present");
-    pa = PTE_ADDR(*pte);
-    flags = PTE_FLAGS(*pte);
-    if((mem = kalloc()) == 0)
-      goto bad;
-    memmove(mem, (char*)P2V(pa), PGSIZE);
-    if(mappages(d, (void*)i, PGSIZE, V2P(mem), flags) < 0) {
-      kfree(mem);
-      goto bad;
+    if ((d = setupkvm()) == 0)
+        return 0;
+    for (i = 0; i < sz; i += PGSIZE)
+    {
+        if ((pte = walkpgdir(pgdir, (void *) i, 0)) == 0)
+            panic("copyuvm: pte should exist");
+        if (!(*pte & PTE_P))
+            panic("copyuvm: page not present");
+        pa = PTE_ADDR(*pte);
+        flags = PTE_FLAGS(*pte);
+        if ((mem = kalloc()) == 0)
+            goto bad;
+        memmove(mem, (char *) P2V(pa), PGSIZE);
+        if (mappages(d, (void *) i, PGSIZE, V2P(mem), flags) < 0)
+        {
+            kfree(mem);
+            goto bad;
+        }
     }
-  }
-  return d;
+    for (i = stack_pos; i < KERNBASE - PGSIZE; i += PGSIZE)
+    {
+        if ((pte = walkpgdir(pgdir, (void *) i, 0)) == 0)
+            panic("copyuvm: pte should exist");
+        if (!(*pte & PTE_P))
+            panic("copyuvm: page not present");
+        pa = PTE_ADDR(*pte);
+        flags = PTE_FLAGS(*pte);
+        if ((mem = kalloc()) == 0)
+            goto bad;
+        memmove(mem, (char *) P2V(pa), PGSIZE);
+        if (mappages(d, (void *) i, PGSIZE, V2P(mem), flags) < 0)
+        {
+            kfree(mem);
+            goto bad;
+        }
+    }
+    return d;
 
-bad:
-  freevm(d);
-  return 0;
+    bad:
+    freevm(d);
+    return 0;
 }
-
-//PAGEBREAK!
 // Map user virtual address to kernel address.
 char*
 uva2ka(pde_t *pgdir, char *uva)
